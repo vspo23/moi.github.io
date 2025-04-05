@@ -1,0 +1,55 @@
+@media(max-width: 1024px) {
+  
+
+}
+@media(max-width: 980px) {
+    .prints > li {
+        width: 20rem;
+    }
+
+    .prints > li > div {
+        width: 20rem;
+        height: 17rem;
+    }
+
+   
+}
+
+@media(max-width: 768px) {
+    .prints > li {
+        width: 15rem;
+    }
+
+    .prints > li > div {
+        width: 15rem;
+        height: 13rem;
+    }
+
+}
+
+@media(max-width: 574px) {
+    .photo {
+        width: auto;
+        height: 16rem;
+        float: none;
+        margin: auto;
+    }
+
+    .prints > li {
+        width: 12rem;
+    }
+
+    .prints > li > div {
+        width: 12rem;
+        height: 11rem;
+    }
+    .prints > li > em {
+
+        font-size: 0.6rem;
+
+    }
+
+    .prints > li >p {
+        font-size: 0.6rem;
+    }
+}

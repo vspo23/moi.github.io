@@ -1,0 +1,224 @@
+@font-face {
+    font-family:deco;
+    src: url("../fonts/Proserpina-Deco.ttf");
+}
+
+@font-face {
+    font-family:squad;
+    src: url("../fonts/Squad-Trial-Light.ttf");
+}
+
+@font-face {
+    font-family: neris;
+    src: url("../fonts/Neris-Thin.otf");
+}
+
+:root {
+    font-size: 15pt;
+}
+
+
+body {
+    background: linear-gradient(60deg,#020419,#0a0e50); 
+    /*background-image: url(../img/backgroung_nice.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh ;
+    color:#E5E3F5;
+    background-color: #000;
+
+    font-family: neris;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+/*shapka contakt*/
+nav.hline {
+    display: flex;
+
+    height: 5rem;
+    background-color: #00000066;
+    justify-content: space-evenly;
+    align-items: center;
+    color:rgb(163, 190, 245)
+}
+
+footer {
+    background-color: #00000099;
+    color:rgb(163, 190, 245);
+    font-size: 0.8rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;;
+}
+
+/*shapka  contakt*/
+header > nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+/*shapka caita ccontakt*/
+footer > nav {
+    bottom: 0;
+}
+
+
+/*shapka caita ccontakt*/
+nav.hline > li {
+    font-size: 1.5rem;
+    list-style: none;
+}
+nav.hline > li > a {
+    text-decoration: none;
+}
+
+nav.hline > li > a:visited {
+    color: #fff;
+}
+
+nav.hline > li > a:hover {
+    color: rgb(212, 153, 210);
+}
+
+nav.hline > li > a:active {
+    color: rgb(235, 212, 234);
+}
+/*text sata o photo*/
+main {
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/* blok1 text vasilisa */
+main h1 {
+    font-family: deco;
+    text-align: center;
+}
+
+main hgroup {
+    margin-block-end: 5rem;
+}
+
+/* cmena spapka*/
+main h1 {
+    margin-block-end: 0;
+    color:rgb(213, 224, 248);
+    font-weight: 500;
+    
+}
+
+main hgroup > p {
+    text-align: center;
+}
+
+main p.text {
+    font-size: 1.2rem;
+} 
+
+/*photo na s glavnoq*/
+.photo {
+    width: 20rem;
+    float:right;
+    margin-left: 2rem;
+}
+/*podval conkti*/
+footer > hr {
+    display: none;
+}
+/* blok 2 contact opisanie*/
+main > h2 {
+    font-family: deco;
+    font-weight: 500;
+    color:rgb(207, 221, 247);
+}
+/* blok 2 contact vopros*/
+main > h3 {
+    font-family: deco;
+    font-weight: 500;
+    color:rgb(207, 221, 247);
+}
+/* blok 2 contact cilka*/
+main a:link ,
+main a:visited {
+        color:rgb(184, 205, 246);
+}
+main a:hover {
+    color:rgb(214, 223, 247);
+}
+main a:active {
+    color:rgb(187, 205, 240);
+}
+/* blok 2 contact cocseti text*/
+main dt {
+    text-decoration: double;
+    color:rgb(242, 244, 248);
+}
+/* blok 2 contact text2*/
+main >p {
+    text-decoration: double;
+    color:rgb(227, 232, 242);
+}
+
+/* blok 3 galeri*/
+.prints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    cursor: pointer;
+}
+.prints > li {
+    display: flex;
+    flex-direction: column;
+    background-color: #6da6ec44;
+    padding: 0;
+    margin-bottom: 1em;
+    width: 25rem;
+    list-style: none;
+}
+
+.prints > li > div {
+    width: 25rem;
+    height: 21rem;
+    overflow: hidden;
+    text-align: center;
+}
+/*blok3 text nazvanie photo*/
+.prints > li > em {
+    display: block;
+    margin-top: 0.3em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    font-family: deco;
+    text-align: center;
+    color:rgb(207, 221, 247);
+    cursor: default;
+}
+/*blok3 text nazvanie lot opisanie*/
+.prints > li >p {
+    text-decoration: double;
+    text-align: center;
+    color:rgb(207, 221, 247);
+    cursor: default;
+    margin: 0;
+    margin-bottom: 0.75em;
+}
+
+.prints > li > div > img  {
+   transition: 1s;
+    transform: scale3d(0.85,0.85,1);
+
+   width: 100%;
+  }
+  
+  .prints > li > div > img:hover {
+    transition: 1s;
+    transform: scale3d(1,1,1);
+
+  }
+ 
